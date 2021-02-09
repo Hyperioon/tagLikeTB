@@ -10,7 +10,7 @@ const TagList = (props) => {
       return <li className="tag-wrap" key={item.thing}>
         <span id="tag" className={"tagColor" + item.color}>
           {item.thing}
-          <a href="#" className="close" id={item.thing} onClick={props.changeDone} ></a>
+          <a className="close" id={item.thing} onClick={props.changeDone} ></a>
         </span>
       </li>
     }
@@ -20,7 +20,7 @@ const TagList = (props) => {
   );
 }
 
-const Container = (props) => {
+const Tag = (props) => {
   const [editdata, setEditdata] = useState(null)
   const [data, setData] = useState(
     [
@@ -181,4 +181,4 @@ const Container = (props) => {
     );
 }
 
-export default Container;
+export default Tag;
