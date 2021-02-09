@@ -1,0 +1,248 @@
+@color: #c21c07;
+.Container {
+  // text-align: center;
+}
+
+.tag-ul {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.tag-wrap {
+  margin-right: 8px;
+  height: 28px;
+  display: inline;
+  position: relative;
+}
+
+#tag {
+  margin-right: 8px;
+  height: 28px;
+  display: inline-block;
+  line-height: 28px;
+  position: relative;
+  border-radius: 28px;
+  padding: 0 12px;
+  transition: padding-right 218ms ease;
+  z-index: 2;
+}
+
+#tag:hover {
+  padding-right: 25px;
+  z-index: 0;
+  .close {
+    opacity: 1;
+  }
+}
+
+.close {
+  top: 9px;
+  right: 30px;
+  position: absolute;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 218ms ease;
+}
+
+.close:before,
+.close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 10px;
+  width: 3px;
+  background-color: #666;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  display: inline;
+}
+
+.edit {
+  visibility: hidden;
+}
+
+.edit:hover {
+  color: #1890ff;
+}
+
+.tag-tb {
+  display: flex;
+  // padding-left: 50px;
+  text-indent: 10px;
+  line-height: 32px;
+  cursor: pointer;
+}
+.tag-name {
+  white-space:nowrap;//不换行
+  overflow: hidden;//超出隐藏
+  text-overflow: ellipsis;//变成...
+  color: #5c5c5c;
+}
+
+.tag-tb:hover {
+  background-color: rgb(243, 243, 243);
+  .edit {
+    visibility: visible;
+  }
+}
+
+.plus {
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 50%;
+  border-color: #1890ff;
+  padding: 0 5px;
+  width: 32px;
+}
+
+.plus-span {
+  color: #1890ff;
+  font-size: 22px;
+  line-height: 20px;
+}
+
+#color-circle {
+  line-height: 20px;
+  list-style: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.color1 {
+  background-color: rgb(27, 154, 238);
+}
+.color2 {
+  background-color: rgb(0, 185, 25);
+}
+.color3 {
+  background-color: rgb(231, 104, 0);
+}
+.color4 {
+  background-color: rgb(238, 27, 27);
+}
+.color5 {
+  background-color: rgb(255, 0, 140);
+}
+.color6 {
+  background-color: rgb(130, 0, 206);
+}
+
+.tagColor0 {
+  border: 1px solid #e7eaee;
+  background-color: #f8f9fa;
+  color: #5c5c5c;
+  background-color: #f8f9fa;
+}
+
+.tagColor1 {
+  color: rgb(22, 124, 192);
+  background-color: rgb(218, 238, 255);
+}
+.tagColor2 {
+  color: rgb(4, 160, 25);
+  background-color: rgb(199, 255, 218);
+}
+.tagColor3 {
+  color: rgb(231, 104, 0);
+  background-color: rgb(255, 235, 209);
+}
+.tagColor4 {
+  color: rgb(238, 27, 27);
+  background-color: rgb(255, 212, 212);
+}
+.tagColor5 {
+  color: rgb(255, 0, 140);
+  background-color: rgb(255, 220, 247);
+}
+.tagColor6 {
+  color: rgb(130, 0, 206);
+  background-color: rgb(238, 210, 255);
+}
+
+.gougou {
+  display: block;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  width: 25px;
+  height: 25px;
+}
+.icon-close {
+  color: #8c8c8c;
+  font-size: 18px;
+  position: absolute;
+  right: 16px;
+  top: 6px;
+}
+.icon-hide {
+  color: #8c8c8c;
+  font-size: 18px;
+  position: absolute;
+  left: 16px;
+  top: 6px;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  line-height: 30px;
+  background-color: #1890ff;
+  transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1470c7;
+}
+
+.btn-danger {
+  border: 1px solid;
+  color: #ec0000;
+  background-color: #ffffff;
+}
+
+.btn-danger:hover {
+  border: 1px solid #ec0000;
+  background-color: #ec0000;
+  color: white;
+}
+
+.dot {
+  font-size: 22px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  margin: auto;
+  width: 30%;
+  /* background-color: rgb(218, 218, 218); */
+  height: 50px;
+  /* color: white; */
+}
+.ant-popover-title {
+  text-align: center;
+  line-height: 32px;
+}
